@@ -1,0 +1,10 @@
+services:
+  print_env:
+    image: python:3-slim
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python print_env.py VAR1,VAR2
+    environment:
+      - VAR1=${VAR1}
+      - VAR2=${VAR2}
