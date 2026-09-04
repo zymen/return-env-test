@@ -2,4 +2,4 @@ services:
   print_env:
     image: nginx:latest
     ports: 
-        - 80:11182
+        - 11182:80
